@@ -15,7 +15,7 @@ const jump = () => {
 
         setTimeout(() => {
             dino.classList.remove('jump');
-        }, 1000);
+        }, 2000);
 
         const rockLeft = parseInt(getComputedStyle(rock).getPropertyValue('left'));
         if(rockLeft < 230){
