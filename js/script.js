@@ -18,7 +18,7 @@ const jump = () => {
         }, 1000);
 
         const rockLeft = parseInt(getComputedStyle(rock).getPropertyValue('left'));
-        if(rockLeft < 210){
+        if(rockLeft < 230){
             updateScore();
         }
     }
