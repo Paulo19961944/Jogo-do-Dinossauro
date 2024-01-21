@@ -11,13 +11,16 @@ const updateScore = () => {
 
 const jump = () => {
     if (!gameover && !dino.classList.contains('jump')) {
-        dino.classList.add('jump');
+        dino.classList.add('jump')
 
         setTimeout(() => {
             dino.classList.remove('jump');
         }, 1000);
 
-        updateScore(); // Aumenta a pontuação apenas uma vez por salto
+        const rockLeft = parseInt(getComputedStyle(rock).getPropertyValue('left'));
+        if(rockLeft < 210){
+            updateScore();
+        }
     }
 };
 
@@ -32,7 +35,7 @@ const checkCollision = () => {
     const dinoBottom = parseInt(getComputedStyle(dino).getPropertyValue('bottom'));
     const rockLeft = parseInt(getComputedStyle(rock).getPropertyValue('left'));
 
-    if (dinoBottom < 9 && rockLeft > 0 && rockLeft < 50) {
+    if (dinoBottom < 9 && rockLeft > 3 && rockLeft < 180) {
         gameover = true;
         alert('Game Over! A sua pontuação é: ' + score);
         restartGame();
