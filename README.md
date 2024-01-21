@@ -9,4 +9,4 @@ Para melhorias pode ser adicionado e aperfeiçoado a lógica, para que os pontos
 
 # Link do Projeto
 
-[https://paulo19961944.github.io/Jogo-do-Dinossauro/]((https://paulo19961944.github.io/Jogo-do-Dinossauro/))
+[https://paulo19961944.github.io/Jogo-do-Dinossauro/](https://paulo19961944.github.io/Jogo-do-Dinossauro/)
