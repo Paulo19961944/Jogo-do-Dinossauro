@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/Ceu.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 36px;
+    margin-bottom: 80px;
+}
+
+
+.game-container {
+    background: #101010;
+    border: 5px solid white;
+    width: max-content;
+    height: max-content;
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    height: 70%; /* Defina a altura explicitamente em viewport height (vh) */
+}
+
+.moon {
+    position: absolute;
+    width: 20%;
+    right: 0;
+    top: 60px;
+    animation: moon-animation 10s linear infinite;
+}
+
+.score {
+    font-family: 'Roboto', sans-serif;
+    background-color: #020280;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    border: 1px solid white;
+    width: 180px;
+    height: 60px;
+}
+
+.dino-game {
+    position: absolute;
+    width: 250px;
+    bottom: 0;
+}
+
+.jump {
+    animation: jump 1s ease-out;
+}
+
+.rock {
+    position: absolute;
+    width: 10%;
+    right: 0;
+    bottom: 35px;
+    animation: rock-animation 5s linear infinite;
+}
+
+
+@keyframes moon-animation {
+    from {
+        right: -30;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes rock-animation {
+    from {
+        right: -30%;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 35%;
+    }
+
+    50% {
+        bottom: 35%;
+    }
+
+    60% {
+        bottom: 35%;
+    }
+
+    100% {
+        bottom: 0%;
+    }
+}
