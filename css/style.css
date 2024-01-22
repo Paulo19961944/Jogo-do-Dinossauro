@@ -1,9 +1,11 @@
+/* Regras Gerais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Conteúdo da Página */
 body {
     width: 100%;
     height: 100vh;
@@ -16,14 +18,15 @@ body {
     justify-content: center;
 }
 
-h1{
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: 36px;
+/* Titulo da Página */
+h1 {
+    font-family: 'Roboto', sans-serif; /* Coloca a fonte Roboto do Google */
+    color: white; /* Cor do Texto Branca*/
+    font-size: 36px; /* Tamanho da Fonte */
     margin-bottom: 80px;
 }
 
-
+/* Interface do Jogo */
 .game-container {
     background: #101010;
     border: 5px solid white;
@@ -32,9 +35,10 @@ h1{
     position: relative;
     overflow: hidden;
     width: 70%;
-    height: 70%; /* Defina a altura explicitamente em viewport height (vh) */
+    height: 70%;
 }
 
+/* Imagem da Lua */
 .moon {
     position: absolute;
     width: 20%;
@@ -43,6 +47,7 @@ h1{
     animation: moon-animation 10s linear infinite;
 }
 
+/* Div da Pontuação */
 .score {
     font-family: 'Roboto', sans-serif;
     background-color: #020280;
@@ -59,25 +64,30 @@ h1{
     height: 60px;
 }
 
+/* Imagem do Dinossauro */
 .dino-game {
     position: absolute;
     width: 250px;
     bottom: 0;
 }
 
-
+/* Aciona a animação para o dinossauro pular*/
 .jump {
     animation: jump 1s ease-out;
 }
 
+/* Imagem da Pedra */
 .rock {
     position: absolute;
     width: 10%;
     right: 0;
     bottom: 35px;
-    animation: rock-animation 5s linear infinite;
+    animation: rock-animation 5s linear infinite; /* Aciona a animação que faz a pedra andar */
 }
 
+/** ANIMAÇÕES DO CSS */
+
+/* Animação que faz a lua se mover*/
 
 @keyframes moon-animation {
     from {
@@ -89,6 +99,7 @@ h1{
     }
 }
 
+/* Animação que faz a pedra se mover*/
 @keyframes rock-animation {
     from {
         right: -30%;
@@ -99,6 +110,7 @@ h1{
     }
 }
 
+/* Animação que faz o Dinossauro Pular*/
 @keyframes jump {
     0% {
         bottom: 0;
