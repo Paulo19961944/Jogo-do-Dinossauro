@@ -50,7 +50,7 @@ h1 {
 /* Div da Pontuação */
 .score {
     font-family: 'Roboto', sans-serif;
-    background-color: #020280;
+    background-color: var(--bg-score);
     color: var(--font-color);
     font-size: 18px;
     font-weight: 600;
