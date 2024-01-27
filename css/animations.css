@@ -1,0 +1,47 @@
+/** ANIMAÇÕES DO CSS */
+
+/* Animação que faz a lua se mover*/
+
+@keyframes moon-animation {
+    from {
+        right: -30;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+/* Animação que faz a pedra se mover*/
+@keyframes rock-animation {
+    from {
+        right: -30%;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+/* Animação que faz o Dinossauro Pular*/
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 35%;
+    }
+
+    50% {
+        bottom: 35%;
+    }
+
+    60% {
+        bottom: 35%;
+    }
+
+    100% {
+        bottom: 0%;
+    }
+}

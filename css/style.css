@@ -20,16 +20,16 @@ body {
 
 /* Titulo da Página */
 h1 {
-    font-family: 'Roboto', sans-serif; /* Coloca a fonte Roboto do Google */
-    color: white; /* Cor do Texto Branca*/
+    font-family: var(--font-roboto); /* Coloca a fonte Roboto do Google */
+    color: var(--font-color); /* Cor do Texto Branca*/
     font-size: 36px; /* Tamanho da Fonte */
     margin-bottom: 80px;
 }
 
 /* Interface do Jogo */
 .game-container {
-    background: #101010;
-    border: 5px solid white;
+    background: var(--bg-container);
+    border: 5px solid var(--border-color);
     width: max-content;
     height: max-content;
     position: relative;
@@ -51,7 +51,7 @@ h1 {
 .score {
     font-family: 'Roboto', sans-serif;
     background-color: #020280;
-    color: white;
+    color: var(--font-color);
     font-size: 18px;
     font-weight: 600;
     display: flex;
@@ -59,7 +59,7 @@ h1 {
     justify-content: center;
     position: absolute;
     right: 0;
-    border: 1px solid white;
+    border: 1px solid var(--border-color);
     width: 180px;
     height: 60px;
 }
@@ -83,52 +83,4 @@ h1 {
     right: 0;
     bottom: 35px;
     animation: rock-animation 5s linear infinite; /* Aciona a animação que faz a pedra andar */
-}
-
-/** ANIMAÇÕES DO CSS */
-
-/* Animação que faz a lua se mover*/
-
-@keyframes moon-animation {
-    from {
-        right: -30;
-    }
-
-    to {
-        right: 100%;
-    }
-}
-
-/* Animação que faz a pedra se mover*/
-@keyframes rock-animation {
-    from {
-        right: -30%;
-    }
-
-    to {
-        right: 100%;
-    }
-}
-
-/* Animação que faz o Dinossauro Pular*/
-@keyframes jump {
-    0% {
-        bottom: 0;
-    }
-
-    40% {
-        bottom: 35%;
-    }
-
-    50% {
-        bottom: 35%;
-    }
-
-    60% {
-        bottom: 35%;
-    }
-
-    100% {
-        bottom: 0%;
-    }
 }
