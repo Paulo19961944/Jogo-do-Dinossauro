@@ -6,9 +6,9 @@ Esse é um jogo simples em HTML, CSS e JS. É quase que nem o jogo do Dinossauro
 
 O Jogo só está funcionando em um computador com teclado, pois precisa de um evento keydown para funcionar
 
-# Melhorias
+# Atualizações
 
-Para melhorias pode ser adicionado e aperfeiçoado a lógica, para que os pontos sejam contados quando estiver próximo da pedra, com uma margem é claro.
+Foi feita a Atualização para contar os pontos corretamente, alem de ter sido feito as divisões dos Arquivos CSS. Temos um arquivo só pra estilização, estamos usando variáveis para facilitar ainda mais caso necessite fazer mais uma atualização. Foi separado os Arquivos para as animações em CSS não fique no mesmo arquivo também e ainda adicionado um reset.css também para padronizar o código.
 
 # Link do Projeto
 
