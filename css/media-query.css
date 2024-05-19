@@ -31,7 +31,7 @@
         width: 240px;
     }
 
-    .rock{
+    .obstaculo{
         width: 80px;
     }
 
@@ -100,7 +100,7 @@
         bottom: -80px;
     }
 
-    .rock{
+    .obstaculo{
         width: 144px;
     }
 

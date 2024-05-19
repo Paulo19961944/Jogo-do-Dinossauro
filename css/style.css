@@ -68,7 +68,7 @@ small{
     animation: moon-animation 10s linear infinite;
 }
 
-/* Div da Pontuação */
+/* Container da Pontuação */
 .score {
     z-index: 1;
     background-color: var(--bg-score);
@@ -84,6 +84,7 @@ small{
     height: 32px;
 }
 
+/*Texto da Pontuação*/
 .score-text{
     font-family: var(--font-istok-web);
     color: var(--font-color);
@@ -98,6 +99,7 @@ small{
     bottom: -32px;
 }
 
+/*Icone de Dinossauro*/
 .dino-icon{
     width: 40px;
     height: 56.51px;
@@ -108,8 +110,8 @@ small{
     animation: jump 1.3s ease-out;
 }
 
-/* Imagem da Pedra */
-.rock {
+/* Imagem do Obstáculo */
+.obstaculo {
     position: absolute;
     width: 40px;
     right: 0;
