@@ -1,0 +1,119 @@
+@media (min-width: 480px) {
+    .game-container{
+        width: 480px;
+        height: 280px;
+    }
+}
+
+@media (min-width: 768px) {
+    header, footer{
+        height: 160px;
+    }
+
+    footer{
+        bottom: -288px;
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+    
+    small{
+        font-size: 0.88em;
+    }
+
+    .dino-icon{
+        width: 64px;
+        height: 90.416px;
+    }
+
+    .dino-game{
+        width: 240px;
+    }
+
+    .rock{
+        width: 80px;
+    }
+
+    .moon{
+        width: 144px;
+    }
+
+    .score{
+        width: 120px;
+        height: 48px;
+    }
+
+    .score-text{
+        font-size: 0.88rem;
+    }
+
+    .game-container{
+        margin-top: 288px;
+        width: 704px;
+        height: 400px;
+    }
+}
+
+@media (min-width: 1440px){
+    .game-container{
+        width: 1248px;
+        height: 560px;
+    }
+
+    .score{
+        width: 160px;
+        height: 56px;
+    }
+
+    .score-text{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1920px){
+
+    header, footer{
+        height: 232px;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    small{
+        font-size: 1.18em;
+    }
+
+    .dino-icon{
+        width: 80px;
+        height: 113.02px;
+    }
+
+    .game-container{
+        max-width: 1440px;
+        height: 720px;
+    }
+
+    .dino-game{
+        width: 420px;
+        bottom: -80px;
+    }
+
+    .rock{
+        width: 144px;
+    }
+
+    .moon{
+        width: 240px;
+    }
+
+    .score{
+        width: 240px;
+        height: 80px;
+    }
+
+    .score-text{
+        font-size: 1.32em;
+    }
+}

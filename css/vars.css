@@ -1,7 +1,9 @@
 :root{
-    --font-color: #fff;
-    --border-color: #fff;
+    --bg-header-footer: #0D0A0B;
+    --font-color: #fafafa;
+    --border-color: #fafafa;
     --bg-container: #101010;
-    --bg-score: #020280;
-    --font-roboto: 'Roboto', sans-serif;
+    --bg-score: #0077B6;
+    --font-gugi: 'Gugi', sans-serif;
+    --font-istok-web: 'Istok Web', sans-serif;
 }
